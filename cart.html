@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="store.js"> async</script>
+</head>
+<body>
+    <section id="header"> 
+        <a href="#"><img src="img/ALbannaLago.png " class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="Index.html">Home</a></li>
+                <li><a  href="Shop.html">Shop</a></li>
+                <li><a class="active" href="cart.html"><i class="far fa-shopping-bag"> </i></a></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header">
+        
+        <h2>#Enjoy</h2>
+        <p>Save more with coupons & up to 70% off!</p>
+        
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%" >
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button id="emptycart" type="button">REMOVE</button></td>
+                    <td><img src="img/product img/PF1.jpg" alt=""></td>
+                    <td>Relaxed fit hoodie</td>
+                    <td>$50</td>
+                    <td><input type="number" value="1"></td>
+                    
+                </tr>
+                <tr>
+                    <td><button class="emptycart" type="button">REMOVE</button></td>
+                    <td><img src="img/product img/PF2.jpg" alt=""></td>
+                    <td>T-shirt</td>
+                    <td>$20</td>
+                    <td><input type="number" value="1"></td>
+                    
+                </tr>
+                <tr>
+                    <td><button class="emptycart" type="button">REMOVE</button></td>
+                    <td><img src="img/product img/PF3.jpg" alt=""></td>
+                    <td>pants</td>
+                    <td>$65</td>
+                    <td><input type="number" value="1"></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="subtotal">
+            <h3>cart Totals</h3>
+            <table>
+                <tr>
+                    <td> Cart Subtotal</td>
+                    <td>$135</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td> <strong> $135</strong></td>
+                </tr>
+            </table>
+            <button onclick="gotoFinalPage ()"; class="normal">Proceed to checkout</button>
+            <button  id="emptycart">empty cart</button>
+
+        </div>
+
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p> <strong>Address:</strong> nisantasi university</p>
+            <p> <strong>Phone:</strong> 0555555555</p>
+            <p> <strong>Hours:</strong> 10:00 - 17:00 mon - sat</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

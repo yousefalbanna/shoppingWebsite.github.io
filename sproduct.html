@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sproduct page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="store.js"> async</script>
+</head>
+<body>
+    <section id="header"> 
+        <a href="#"><img src="img/ALbannaLago.png " class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="Index.html">Home</a></li>
+                <li><a class="active" href="Shop.html">Shop</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"> </i></a></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/product img/PF1.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/product img/PF1-1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/product img/PF1-2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/product img/PF1-3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/product img/PF1-4.jpg" width="100%" class="small-img" alt="">
+                </div>
+               
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / hoodie</h6>
+            <h4>Men's Fashion hoodie</h4>
+            <h2>$50</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Hoodie in sweatshirt fabric made from a cotton blend. Relaxed fit, jersey-lined, drawstring hood, kangaroo pocket, long sleeves and wide ribbing at the cuffs and hem. Soft fluffy inside.</span>
+            <h6>Reviews <input type="text" class="ReviewsIn"></h6>
+            
+        </div>
+        
+    </section>
+
+  
+    
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p> <strong>Address:</strong> nisantasi university</p>
+            <p> <strong>Phone:</strong> 0555555555</p>
+            <p> <strong>Hours:</strong> 10:00 - 17:00 mon - sat</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg"); 
+      var smallimg = document.getElementsByClassName("small-img");
+
+     smallimg[0].onclick = function(){
+      MainImg.src = smallimg[0].src;
+      }
+       smallimg[1].onclick = function(){
+         MainImg.src = smallimg[1].src;
+        }
+         smallimg[2].onclick = function(){
+         MainImg.src = smallimg[2].src;
+         }
+         smallimg[3].onclick = function(){
+         MainImg.src = smallimg[3].src;
+         }
+    </script>
+</body>
+</html>
